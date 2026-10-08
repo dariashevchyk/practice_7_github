@@ -42,7 +42,7 @@
 INPUT_FILE = "students.csv"
 OUTPUT_FILE = "result.txt"
 
-with open("/students analysis/students.csv", "r", encoding='utf-8') as f:
+with open("C:/cs201/students analyses/students.csv", "r", encoding='utf-8') as f:
     next(f)
     lines = f.readlines()
 ls = []
@@ -73,10 +73,10 @@ python_leng_aver = python_sum / student_count
 
 
 output_text = (
-    'Середній бал по класу:'
+    'Середній бал по класу:\n'
     f"math: {round(math_aver, 1)}\n"
     f"english: {round(english_aver, 1)}\n"
-    f"python_leng: {round(python_leng_aver, 1)}\n"
+    f"python: {round(python_leng_aver, 1)}\n"
     f"Найкращий студент: {best_name} ({best_average})\n\n"
 )
 
@@ -94,7 +94,7 @@ output_text = (
 # ============================================================
 # TODO 5: відкрийте OUTPUT_FILE в режимі 'w' і запишіть туди результат
 #   у такому вигляді (числа округліть до одного знака після коми):
-with open("/students analysis/result.txt", "w", encoding='utf-8') as f:
+with open("C:/cs201/students analyses/result.txt", "w", encoding='utf-8') as f:
     f.write(output_text)
 print(output_text)
 #   Середній бал по класу:
