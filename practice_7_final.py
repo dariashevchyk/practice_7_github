@@ -42,7 +42,7 @@
 INPUT_FILE = "students.csv"
 OUTPUT_FILE = "result.txt"
 
-with open("C:/cs201/students analyses/students.csv", "r", encoding='utf-8') as f:
+with open("C:/cs201/students analysis/students.csv", "r", encoding='utf-8') as f:
     next(f)
     lines = f.readlines()
 ls = []
@@ -94,7 +94,7 @@ output_text = (
 # ============================================================
 # TODO 5: відкрийте OUTPUT_FILE в режимі 'w' і запишіть туди результат
 #   у такому вигляді (числа округліть до одного знака після коми):
-with open("C:/cs201/students analyses/result.txt", "w", encoding='utf-8') as f:
+with open("C:/cs201/students analysis/result.txt", "w", encoding='utf-8') as f:
     f.write(output_text)
 print(output_text)
 #   Середній бал по класу:
